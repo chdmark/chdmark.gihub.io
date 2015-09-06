@@ -1,0 +1,36 @@
+
+.blog-section {
+	background-color: #ffffff;
+	
+	width: 75%;
+	height: 80%;
+	float: right;
+	right: 0;
+}
+.footer {
+	background-color: #333D40;
+	width:100%;
+	
+	position: fixed;
+	height: 5em;
+	left: 0;
+	bottom: 0;
+
+}
+.footer ul{
+	font-size: 14px;
+	float: right;
+	margin-right: 40px;
+}
+
+.footer a {
+	text-decoration: none;
+	color: #ffffff;
+}
+.footer li {
+	display: inline;
+	text-align: center;
+	margin-right: 10px;
+	
+}
+
