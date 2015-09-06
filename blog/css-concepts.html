@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Title of Blog Post</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../stylesheets/default.css"  href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
+	<link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+</head>
+<body>
+<div id="header">
+<header>
+<nav class="navbar">
+		<ul>
+			<li><a href="#">About Me</a></li>
+			<li><a href="#">Contact</a></li>
+			<li><a href="http://chdmark.github.io">Home</a></li>
+			<li><a href="#">Projects</a></li>
+			<li><a href="#">CV</a></li>
+			<li><a href="#">Social Media</a></li>
+		</ul>
+	</nav>	
+</header>
+</div>
+<div class="blog-section">
+<article>
+<section>
+	<h2 class="welcome">Classes vs. IDs</h2>
+	<section>
+		<p class="short-description">
+    		One of the biggest questions in HTML/CSS is whether to use classes or IDs when dividing your content. I am going to explore the key differences between an ID and a class in this post. The key difference you should take away is that IDs are unique and the rule can only be used once, and classes can be used multiple times throughout your HTML document. Let us first talk about why we need classes or IDs. 
+    	</p>
+   	 	<p class="short-description">
+      		Experts in HTML and CSS generally consider styling your page via HTML as bad practice. CSS gives you the option in describing HTML content through their tags such as ul, p, h2, etc. You can style every tag in HTML through CSS and this is where classes and IDs come in! For example, if you wanted to style an unordered list through a class, you would enter ul class= “nav”. This is telling the HTML document to apply the styling that you wrote in your CSS document, and vice versa. 
+    </p>
+    	<p class="short-description">
+    		As I mentioned earlier, IDs are unique and you can only use the rule once. This is important to remember as you write your CSS rules! An ID is usually extremely specific to either a header, footer, or maybe a navbar. It is generally good practice to NOT use numerous IDs throughout the page because the element is not reusable. In addition, the continuous use of ids throughout your document leads to too many specific rules, and will hurt you as your document becomes more complex. To specify an ID in HTML, one would enter ul id=“header”. In your CSS document, you denote your ID by a “#” symbol. If we were to use the header ID, it would be #header{*/some code/*}. In that same document, you may not use the “header” rule again. For example, p id=“header” would be invalid because you can only use an ID once! 
+    	</p>
+    	<p class="short-description">
+    		On the other hand, you can use classes multiple times throughout your document. You can use different classes on the same element, and use the same class on other elements. This is great if you want to reuse rules instead of limiting yourself to one specific rule! Generally, you would use a class when you want to style multiple elements throughout a page. For example, you would enter a class like this in HTML: p class=“fancy”. In your CSS document, you denote your class by a “.” symbol. It would look like this in CSS: .fancy{*/some code/*}. You can then apply the same rule to a h1 element, and other elements throughout HTML. This saves you time from typing a new ID every time and is less restrictive than an ID. 
+    	</p>
+    	<p class="short-description">
+    		There you have it! I hope this gives you more clarity of the differences between IDs and classes. You should definitely use more classes in your HTML/CSS document, and only use IDs for a very specific reason. It is considered bad practice to use too many IDs throughout your document. CSS is frustrating, but you can get better with continued practice and repetition. Good luck! 
+    	</p>
+	</section>
+</section>
+</article>
+</div>
+
+ 
+<div class="footer">
+<footer>
+
+	<nav class="social-links">
+	<ul>
+	<li><a href="#">LinkedIn</a></li> 
+	<li><a href="#">Twitter</a></li>  
+	<li><a href="#">GitHub</a></li> 
+	<li><a href="#">Email</a></li>
+	</ul>
+	</nav>	
+</footer>
+</div>
+</body>
+</html>
