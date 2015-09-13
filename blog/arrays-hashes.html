@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Title of Blog Post</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../stylesheets/default.css"  href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
+	<link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+</head>
+<body>
+<div class="header_blog">
+<header>
+<nav class="navbar">
+		<ul>
+			<li><a href="#">About Me</a></li>
+			<li><a href="#">Contact</a></li>
+			<li><a href="http://chdmark.github.io">Home</a></li>
+			<li><a href="#">Projects</a></li>
+			<li><a href="#">CV</a></li>
+			<li><a href="#">Social Media</a></li>
+		</ul>
+	</nav>	
+</header>
+</div>
+<div class="blog-section">
+<article>
+<section>
+	<h2 class="welcome">Arrays and Hashes</h2>
+	<section>
+		<p class="short-description">
+      	Data structures are important elements in programming languages such as Ruby. In this post, I will compare the differences between arrays and hashes. Both arrays and hashes store information and are a collection of objects. You can access information stored inside arrays and hashes through various methods and iterations. Arrays and hashes are very similar, but hashes consist of a pair of keys and values--something we’ll touch on later. 
+
+   		</p>
+    	<p class="short-description">
+     	As mentioned earlier, arrays are used to store an ordered collection of objects. This means that every array has a “slot” so to speak, and you can access that slot in the array by calling that slot in the array. I’ll show you in a bit, so this doesn’t seem confusing. An array has the capability of storing many objects such as strings, numbers, other arrays, and boolean values such as true and false. Basically, an array can store any object. There are various ways to create an array, but I will focus on the literal array constructor. You can create an array by typing [ ]. That will create an empty array. When you create an array, you can store objects inside of them:
+
+    	</p>
+    	<p class ="short-description"><code class="code">array = [2, 5, “Chris”, “array”]</code></p>
+    <p class="short-description">
+      Note how each object is separated by a comma and it is important to know that the beginning of the array starts at 0. If we wanted to access the first element in the array, 2, we would enter the following:
+	</p>
+	<p class ="short-description"><code class="code">>>p array[0]</code></p>
+	<p class ="short-description"><code class="code">=>2</code></p>
+	<p class ="short-description"><code class="code">>>p array[1]</code></p>
+	<p class ="short-description"><code class="code">=>5</code></p>
+	<p class="short-description">
+      As you can see, you access the elements in the array by their ordered position. It takes sometime starting at the number zero, but you will get used to it eventually. Hashes are very similar to an array in the way they store objects. Instead of having an assigned position in a list like an array, objects in hashes are given a key / value pair. You can access the key anytime by typing the name. Hashes are great for storing information that relate to one another such as a first_name key and “Chris” as the value. For example, you can create a hash using the literal hash constructor:
+
+	</p>
+	<p class ="short-description"><code class="code">my_hash { first_name => “Chris” } </code></p>
+	<p class="short-description">
+     In this example, first_name would be the key, and “Chris” would be the value. Every single time you access first_name, “Chris” will be printed out to the console. The way you retrieve a value of an hash is quite simple:
+
+	</p>
+	<p class ="short-description"><code class="code">p my_hash[“first_name”] </code></p>
+	<p class="short-description">
+    “Chris” would be printed to the console. You can store as many key/value pairs in a hash as you desire. I know this is a very basic overview between an array and a hash, but I hope this clarifies the differences between the two and how you create and access them. 
+
+
+	</p>
+	</section>
+</section>
+</article>
+</div>
+
+ 
+<div class="footer">
+<footer>
+
+	<nav class="social-links">
+	<ul>
+	<li><a href="#">LinkedIn</a></li> 
+	<li><a href="#">Twitter</a></li>  
+	<li><a href="#">GitHub</a></li> 
+	<li><a href="#">Email</a></li>
+	</ul>
+	</nav>	
+</footer>
+</div>
+</body>
+</html>
