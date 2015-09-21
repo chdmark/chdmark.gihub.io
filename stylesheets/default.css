@@ -1,3 +1,6 @@
+a:hover{
+	color: red;
+}
 body {
 	background-color: #ffffff;
 	font-family:"Roboto", sans-serif;
@@ -65,6 +68,9 @@ p.short-description {
 	text-decoration: none;
 	color: #ffffff;
 
+}
+.bottom-footer a:hover{
+	color: red;
 }
 
 .bottom-footer li {
