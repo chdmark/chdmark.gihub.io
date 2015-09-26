@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ruby Classes</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../stylesheets/default.css"  href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
+	<link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+</head>
+<body>
+<div class="header_blog">
+<header>
+<nav class="navbar">
+		<ul>
+			<li><a href="#">About Me</a></li>
+			<li><a href="#">Contact</a></li>
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="index.html">Blog</a></li>
+			<li><a href="#">Projects</a></li>
+			<li><a href="#">CV</a></li>
+		</ul>
+	</nav>	
+</header>
+</div>
+<div class="blog-section">
+<article>
+<section>
+	<h2 class="welcome">Instances!!</h2>
+	<section>
+		<p class="short-description">
+      	Enumerable methods are an important part of the Ruby language. They are powerful and can make your life a lot easier by using them. In this post, I will briefly talk about the <code> Enumerable#map</code>. It is a common misconception that the <code> each</code> method is similar to the <code> map</code> method. However, they are not the same. The <code> map</code> method is one of the most powerful enumerables in Ruby. The main difference between <code> each</code> and <code> map</code> is that <code> map</code> returns a completely new object, whereas <code> each</code> does not. Let’s look at how we can use <code> map</code>.
+		</p>
+    	<p class="short-description">
+     	According to the Ruby docs, the <code> Enumerable#map</code> “Returns a new array with the results of running block once for every element in enum.” What does this all mean? When you call <code> map</code> on an array, it will return a new array with whatever you told it to do! Each element will be run through the code block. Let’s see this in practice: 
+
+    	</p>
+    	<p class ="short-description"><code class="code"> => numbers = [1, 2, 3, 4, 5]</code></p>
+    	<p class ="short-description"><code class="code"> >> new_numbers = numbers.map { |x| x + 1}</code></p>
+		<p class ="short-description"><code class="code"> => [2, 3, 4, 5, 6]</code></p>
+		<p class ="short-description"><code class="code"> >> new_numbers</code></p>
+		<p class ="short-description"><code class="code"> => [2, 3, 4, 5, 6]</code></p>
+		
+		<p class="short-description"> 
+		As you can see,  <code> map</code> returns an entirely new array with the code it ran. This is important to distinguish. If we called <code> each</code> on the  <code> numbers</code> variable and assigned it to the  <code> new_numbers</code> variable, calling  <code> new_numbers</code> would return the original array of  <code> numbers</code>. <code>map</code> gives you an entirely new array. 
+		</p>
+		<p class="short-description"> 
+		I hope this gives you a basic understanding of what  <code> map</code> does. It is an important method in Ruby and is essential in manipulating data. Practice with it in IRB and have fun with it! </p>
+	</section>
+</section>
+</article>
+</div>
+
+ 
+<div class="footer">
+<footer>
+
+	<nav class="social-links">
+	<ul>
+	<li><a href="https://www.linkedin.com/pub/chris-mark/47/5a2/425">LinkedIn</a></li> 
+	<li><a href="https://twitter.com/chdkmark">Twitter</a></li>  
+	<li><a href="https://github.com/chdmark">GitHub</a></li> 
+	<li><a href="mailto:chdmark@gmail.com">Email</a></li>
+	</ul>
+	</nav>	
+</footer>
+</div>
+</body>
+</html>
