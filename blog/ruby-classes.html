@@ -11,7 +11,7 @@
 <header>
 <nav class="navbar">
 		<ul>
-			<li><a href="#">About Me</a></li>
+			<li><a href="../about.html">About Me</a></li>
 			<li><a href="#">Contact</a></li>
 			<li><a href="../index.html">Home</a></li>
 			<li><a href="index.html">Blog</a></li>
@@ -27,23 +27,46 @@
 	<h2 class="welcome">Instances!!</h2>
 	<section>
 		<p class="short-description">
-      	Enumerable methods are an important part of the Ruby language. They are powerful and can make your life a lot easier by using them. In this post, I will briefly talk about the <code> Enumerable#map</code>. It is a common misconception that the <code> each</code> method is similar to the <code> map</code> method. However, they are not the same. The <code> map</code> method is one of the most powerful enumerables in Ruby. The main difference between <code> each</code> and <code> map</code> is that <code> map</code> returns a completely new object, whereas <code> each</code> does not. Let’s look at how we can use <code> map</code>.
+      	Classes, instance variables, and instance methods. What are they? They can be confusing, but oh can they make your life a bit easier. In this blog post, I will show you how to create a class, instance methods, and instance variables. In addition, you will be able to observe how to call these methods outside of the class. Before we get into the code, let’s talk about what exactly is a class. 
+
 		</p>
     	<p class="short-description">
-     	According to the Ruby docs, the <code> Enumerable#map</code> “Returns a new array with the results of running block once for every element in enum.” What does this all mean? When you call <code> map</code> on an array, it will return a new array with whatever you told it to do! Each element will be run through the code block. Let’s see this in practice: 
+     	Classes usually consists of different method definitions within itself. The purpose of a class is to be instantiated. This means that there are objects that are instances of the class. The way to define a class is quite simple. We are going to define a simple die class:
+ 
 
     	</p>
-    	<p class ="short-description"><code class="code"> => numbers = [1, 2, 3, 4, 5]</code></p>
-    	<p class ="short-description"><code class="code"> >> new_numbers = numbers.map { |x| x + 1}</code></p>
-		<p class ="short-description"><code class="code"> => [2, 3, 4, 5, 6]</code></p>
-		<p class ="short-description"><code class="code"> >> new_numbers</code></p>
-		<p class ="short-description"><code class="code"> => [2, 3, 4, 5, 6]</code></p>
+    	<p class ="short-description"><code class="code">class Die #Create a class by typing class</code> </p>
+    	<p class ="short-description"><code class="code">end </code></p>
+	
 		
 		<p class="short-description"> 
-		As you can see,  <code> map</code> returns an entirely new array with the code it ran. This is important to distinguish. If we called <code> each</code> on the  <code> numbers</code> variable and assigned it to the  <code> new_numbers</code> variable, calling  <code> new_numbers</code> would return the original array of  <code> numbers</code>. <code>map</code> gives you an entirely new array. 
+		As you can see, you create a class by typing class and whatever name you want to call it. As I mentioned earlier, classes contain instance variables, method definitions within it, and instance methods. What exactly is an instance variable? An instance variable is much like a local variable; however, you can use that variable throughout your class and within different method definitions within your class. Instance variables usually start with an @ sign. In addition, you can initialize a class with an initialize method. In the code below, I will show you how to use the initialize method. When you initialize a method, the method will be used each time you create a class: 
 		</p>
+		<p class ="short-description"><code class="code">class Die #Create a class by typing class </code></p>
+		<p class ="short-description"><code class="code">	def initialize(sides)</code></p>
+		<p class ="short-description"><code class="code">		@sides = sides </code></p>
+		<p class ="short-description"><code class="code">	end</code></p>
+		<p class ="short-description"><code class="code">end</code></p>
 		<p class="short-description"> 
-		I hope this gives you a basic understanding of what  <code> map</code> does. It is an important method in Ruby and is essential in manipulating data. Practice with it in IRB and have fun with it! </p>
+		We created the initialize method so that when you pass in a number to the class, that method will always run. Right now, our code would just return the value of the number we pass into it. As you can see, we also defined an instance variable. Let’s make this class a little more exciting by putting more methods within the class. You will be able to see how you can use the instance variable in other methods as well. 
+
+		</p>
+
+		<p class ="short-description"><code class="code">class Die #Create a class by typing class </code></p>
+		<p class ="short-description"><code class="code">	def initialize(sides)</code></p>
+		<p class ="short-description"><code class="code">		@sides = sides </code></p>
+		<p class ="short-description"><code class="code">	end</code></p>
+		<p class ="short-description"><code class="code">	def sides</code></p>
+		<p class ="short-description"><code class="code">		@sides #We used the instance variable @sides from the first method </code></p>
+		<p class ="short-description"><code class="code">	end</code></p>
+		<p class ="short-description"><code class="code">	def roll</code></p>
+		<p class ="short-description"><code class="code">		rand(1..@sides) #Generating a random number using rand </code></p>
+		<p class ="short-description"><code class="code">	end</code></p>
+		<p class ="short-description"><code class="code">end</code></p>
+		<p class="short-description"> 
+		 We were able to use the instance variables throughout different method definitions. It is important to define an instance variable when you want to use the same variable in other methods within the class. Remember that a local variable is limited to the scope of the method definition. I hope this gives you a better understanding of how classes and instance variables work! I’m still learning myself, so keep practicing! 
+
+		</p>
 	</section>
 </section>
 </article>
