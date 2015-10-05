@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript vs. Ruby</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../stylesheets/default.css"  href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
+	<link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+</head>
+<body>
+<div class="header_blog">
+<header>
+<nav class="navbar">
+		<ul>
+			<li><a href="../about.html">About Me</a></li>
+			<li><a href="#">Contact</a></li>
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="index.html">Blog</a></li>
+			<li><a href="../projects/index.html">Projects</a></li>
+			<li><a href="#">CV</a></li>
+		</ul>
+	</nav>	
+</header>
+</div>
+<div class="blog-section">
+<article>
+<section>
+	<h2 class="welcome">JavaScript Objects vs. Ruby Objects</h2>
+	<section>
+		<p class="short-description">
+      	This week we switched gears and dived into JavaScript. While many of the fundamental concepts are the same, the syntax is different and could be frustrating at times. In this post, I will explain the similarities and differences between Ruby hashes and JavaScript objects. 
+
+		</p>
+    	<p class="short-description">
+     	Let’s observe how you would create an object in JavaScript. The first thing to notice is that objects in JavaScript are considered variables as well. Here’s how you create a JavaScript object:
+ 
+
+    	</p>
+    	<p class ="short-description"><code class="code">var hero = {</code> </p>
+    	<p class ="short-description"><code class="code">	name: “Chris"</code></p>
+		<p class ="short-description"><code class="code">	class: “Hunter”</code></p>
+		<p class ="short-description"><code class="code">	power: “Death-strike”</code></p>
+		<p class ="short-description"><code class="code">}</code></p>
+		
+		<p class="short-description"> 
+		You create a JavaScript object by typing the keyword <code>var</code> and using brackets. The way you create a Ruby hash is very similar: 
+		</p>
+		<p class ="short-description"><code class="code">hero = {</code> </p>
+    	<p class ="short-description"><code class="code">	name: “Chris"</code></p>
+		<p class ="short-description"><code class="code">	class: “Hunter”</code></p>
+		<p class ="short-description"><code class="code"> 	power: “Death-strike”</code></p>
+		<p class ="short-description"><code class="code">}</code></p>
+		
+		<p class="short-description"> 
+		Notice that in Ruby you don’t need use the word var. Accessing these values are a bit different as well. You can access the class key in JavaScript like this: 
+		</p>
+
+		<p class ="short-description"><code class="code">console.log(hero.class)</code></p>
+		<p class ="short-description"><code class="code">=> Hunter</code></p>
+		
+		<p class="short-description"> 
+		 You use the dot notation to access the key you want and use console.log to print it to the console or terminal. Accessing a hash in Ruby is a bit different:
+
+		</p>
+		<p class ="short-description"><code class="code">print hero[:class]</code></p>
+		<p class ="short-description"><code class="code">=> Hunter</code></p>
+		<p class="short-description"> 
+		 As you can see, Ruby uses bracket notation to access the values of its keys. There are subtle differences in Ruby hashes and JavaScript Objects. The way you create and access a hash or object is very similar. I wouldn’t say an object or hash is “better”, they are just a bit different in the way they are used. 
+		</p>
+	</section>
+</section>
+</article>
+</div>
+
+ 
+<div class="footer">
+<footer>
+
+	<nav class="social-links">
+	<ul>
+	<li><a href="https://www.linkedin.com/pub/chris-mark/47/5a2/425">LinkedIn</a></li> 
+	<li><a href="https://twitter.com/chdkmark">Twitter</a></li>  
+	<li><a href="https://github.com/chdmark">GitHub</a></li> 
+	<li><a href="mailto:chdmark@gmail.com">Email</a></li>
+	</ul>
+	</nav>	
+</footer>
+</div>
+</body>
+</html>
