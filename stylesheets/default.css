@@ -1,3 +1,6 @@
+p {
+	margin: 0 0 2em 0;
+}
 a:hover{
 	color: red;
 }
@@ -5,6 +8,8 @@ body {
 	background-color: #ffffff;
 	font-family:"Roboto", sans-serif;
 	color: #6F7F7F;
+	line-height: 1.75em;
+	font-size: 16pt;
 }
 h3{
 	font-family: "Roboto", sans-serif;
@@ -13,17 +18,15 @@ h3{
 	background-color: #0CBF87;
 	position: fixed;
 	width: 100%;
-	height: 8em;
+	height: 6em;
 	top: 0;
 	left: 0;
 }
 .navbar ul {
-	font: "Roboto", sans-serif;
-	font-size: 20px;
+	font-size: 16pt;
 	margin-left: 40%;
-	margin-top: 5em;
+	margin-top: 4em;
 	padding: 0;
-	position: fixed;
 }
 .navbar li{
 	display: inline-block;
@@ -38,9 +41,8 @@ h3{
 .main-section {
 	background-color: #ffffff;
 	position: absolute;
-	top: 8em;
+	top: 6em;
 	width: 75%;
-	height: 85%;
 	float: right;
 	right: 0;
 }
@@ -49,17 +51,21 @@ h3{
 	color: #3B3F40;
 	margin-top: 5em;
 }
-p.short-description {
-	color:;
+.short-description {
 	padding-left: 6em;
 	padding-right: 8em;
+	margin: 0 0 2em 0;
+}
+p.short-description a {
+	color: #0CBF87;
+	border-bottom: dotted 1px; 
 }
 .bottom-footer {
 	background-color: #333D40;
 	position: fixed;
 	left: 0;
 	width: 25%;
-	top: 8em;
+	top: 6em;
 	bottom: 0;
 	height: 85%;
 	float:left;
@@ -67,18 +73,20 @@ p.short-description {
 .bottom-footer a {
 	text-decoration: none;
 	color: #ffffff;
+	font-size: .7em;
 
 }
 .bottom-footer a:hover{
-	color: red;
+	color: #0CBF87;
 }
 
 .bottom-footer li {
 	display: inline-block;
-	margin-left:2.5em;
-	margin-top:10em;
+	margin-left: 10%;
+	margin-top: 40%;
 	text-align: right;
 	color: #ffffff;
+	border-bottom: dotted 1px;
 }
 
 
@@ -90,11 +98,11 @@ img.profile-pic{
 }
 img.align-right{
 	display: block;
-	margin-left: 15em;
-	margin-top: 5em;
+	margin-left: 75%;
+	margin-top: 40%;
 }
 .creation {
-	padding-right: 80px;
+	padding-right: 15%;
 	text-align: right;
 	color:#ffffff;
 }
