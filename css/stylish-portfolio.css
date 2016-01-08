@@ -14,6 +14,7 @@ body {
 
 body {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: white;
 }
 
 .text-vertical-center {
@@ -149,13 +150,13 @@ hr.small {
 }
 
 /* Header */
-
+ 
 .header {
     display: table;
     position: relative;
     width: 100%;
     height: 100%;
-    background: url(../img/davidson3.jpg) no-repeat center center scroll;
+    background: url(../img/pingpong.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -166,12 +167,19 @@ hr.small {
 
 .about {
     padding: 50px 0;
+    background-color: #00bfc6;
 }
 
 /* Services */
 
 .services {
     padding: 50px 0;
+    background-color: white;
+    color: #00bfc6;
+}
+
+.services h2{
+    color: #00bfc6;
 }
 
 .service-item {
@@ -196,6 +204,7 @@ hr.small {
 
 .portfolio {
     padding: 50px 0;
+    background-color: #00bfc6
 }
 
 .portfolio-item {
@@ -214,6 +223,8 @@ hr.small {
 
 .call-to-action {
     padding: 50px 0;
+    background-color: white;
+    color: #00bfc6;
 }
 
 .call-to-action .btn {
@@ -236,4 +247,8 @@ hr.small {
 
 footer {
     padding: 100px 0;
+}
+
+.about-text {
+    color:white;
 }
