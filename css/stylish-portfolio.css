@@ -42,8 +42,16 @@ body {
 .btn-dark:focus,
 .btn-dark:active {
     color: #fff;
-    background-color: rgba(0,0,0,0.7);
+    background-color: #00bfc6;
 }
+
+#github-button:hover,
+#github-button:focus,
+#github-button:active {
+    color: white;
+    background-color:#303030;
+}
+
 
 .btn-light {
     border-radius: 0;
@@ -161,6 +169,8 @@ hr.small {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    color: white;
+    font-size: large;
 }
 
 /* About */
@@ -175,11 +185,11 @@ hr.small {
 .services {
     padding: 50px 0;
     background-color: white;
-    color: #00bfc6;
+    color: #333333;
 }
 
 .services h2{
-    color: #00bfc6;
+    color: #333333;
 }
 
 .service-item {
@@ -204,7 +214,7 @@ hr.small {
 
 .portfolio {
     padding: 50px 0;
-    background-color: #00bfc6
+    background-color: rgba(0,0,0,0.4)
 }
 
 .portfolio-item {
@@ -223,8 +233,8 @@ hr.small {
 
 .call-to-action {
     padding: 50px 0;
-    background-color: white;
-    color: #00bfc6;
+    background-color: #00bfc6;
+    color: white;
 }
 
 .call-to-action .btn {
@@ -247,8 +257,46 @@ hr.small {
 
 footer {
     padding: 100px 0;
+    color: #00bfc6;
+}
+
+footer a {
+    color: #00bfc6;
+}
+
+.text-muted{
+    color: #00bfc6;
 }
 
 .about-text {
     color:white;
+    font-size: 24px;
+}
+
+
+.glyphicon {
+    color: #00bfc6;
+}
+h3,h2{
+    font-size: 36px;
+}
+
+.btn {
+    font-size: 22px;
+}
+
+h4 {
+    font-size: 25px;
+}
+
+p {
+    font-size: 22px;
+}
+
+#greeting {
+    font-size: 36px;
+}
+
+li {
+    font-size: 22px;
 }
